@@ -99,8 +99,8 @@ in
 
     src = fetchFromGitHub {
       repo = "lvgui";
-      owner = "mobile-nixos";
-      rev = "8768bab377a7ccab0b25b96d204af670820f8c76";
+      owner = "mich-nixos";
+      rev = "32e1fe278002a376c0831de75fa22cf04ee247b6";
       hash = "sha256-lDmUppndyDGY1EJT7FC6Fdb3AT2M6D75FnXw4bPNrD0=";
     };
 
