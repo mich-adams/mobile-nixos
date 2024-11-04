@@ -6,7 +6,6 @@
 , freetype
 , SDL2
 , libdrm
-, fetchpatch
 , withSimulator ? false
 }:
 
@@ -104,13 +103,6 @@ in
       rev = "8768bab377a7ccab0b25b96d204af670820f8c76";
       hash = "sha256-lDmUppndyDGY1EJT7FC6Fdb3AT2M6D75FnXw4bPNrD0=";
     };
-
-    patches = [
-      (fetchpatch {
-        url = "https://github.com/donovanglover/lvgui/commit/fda11feb48fb01137d10b4b048546a198a3fa609.patch";
-        hash = "sha256-UR3yF9Yjfiq96dopHqTzNEXL+ReEZZU5BAYjMHyHgso=";
-      })
-    ];
 
     # Document `LVGL_ENV_SIMULATOR` in the built headers.
     # This allows the mrbgem to know about it.
